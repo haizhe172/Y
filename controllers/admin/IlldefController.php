@@ -15,6 +15,5 @@ Class IlldefController extends Controller
   	if(empty($user_id)){
   		return $this->redirect("/?r=admin/login/login");
   	}
-  	return;
   }
 }
