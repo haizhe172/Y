@@ -14,7 +14,6 @@ class LoginController extends Controller
         	return $this->render('login');
     	}
     	$post = Yii::$app->request->post();
-    	//判断是否登录成功
     	if($AdminUserModel->dologin($post['user_name'],$post['user_pwd']) && $this->createAction('captcha')->validate($post['verify'],false)){
     		return $this->redirect("?r=admin/index/index");
     	}

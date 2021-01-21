@@ -40,7 +40,7 @@ class Bar extends \yii\db\ActiveRecord
     {
         return [
             'bar_id' => 'Bar ID',
-            'bra_name' => 'Bra Name',
+            'bra_name' => '导航栏',
             'bra_open' => 'Bra Open',
             'add_time' => 'Add Time',
         ];

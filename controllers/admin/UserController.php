@@ -27,6 +27,7 @@ class UserController extends \yii\web\Controller
     //添加
     public function actionCreate()
     {   
+        
         //实例化数据库
         $AdminUserModel = new AdminUser();
         //判断请求方式

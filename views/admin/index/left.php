@@ -18,42 +18,50 @@ $this->context->layout = false; //不使用布局
 		<div class="leftsidebar_box">
 			<a href="../main.html" target="main"><div class="line">
 					<img src="<?php echo IMG_URL;?>/coin01.png" />&nbsp;&nbsp;首页
-				</div></a>
-			<!-- <dl class="system_log">
-			<dt><img class="icon1" src="<?php echo IMG_URL;?>/coin01.png" /><img class="icon2"src="<?php echo IMG_URL;?>/coin02.png" />
-				首页<img class="icon3" src="<?php echo IMG_URL;?>/coin19.png" /><img class="icon4" src="<?php echo IMG_URL;?>/coin20.png" /></dt>
-		</dl> -->
+				</div>
+			</a>
+
+
+
 			<dl class="system_log">
 				<dt>
 					<img class="icon1" src="<?php echo IMG_URL;?>/coin03.png" /><img class="icon2"
-						src="<?php echo IMG_URL;?>/coin04.png" /> 网站管理<img class="icon3"
+						src="<?php echo IMG_URL;?>/coin04.png" />景点管理<img class="icon3"
 						src="<?php echo IMG_URL;?>/coin19.png" /><img class="icon4"
 						src="<?php echo IMG_URL;?>/coin20.png" />
 				</dt>
 				<dd>
 					<img class="coin11" src="<?php echo IMG_URL;?>/coin111.png" /><img class="coin22"
-						src="<?php echo IMG_URL;?>/coin222.png" /><a class="cks" href="../user.html"
-						target="main">管理员管理</a><img class="icon5" src="<?php echo IMG_URL;?>/coin21.png" />
+						src="<?php echo IMG_URL;?>/coin222.png" /><a class="cks" href="/?r=admin/scene/create"
+						target="main">景点添加</a><img class="icon5" src="<?php echo IMG_URL;?>/coin21.png" />
+				</dd>
+				<dd>
+					<img class="coin11" src="<?php echo IMG_URL;?>/coin111.png" /><img class="coin22"
+						src="<?php echo IMG_URL;?>/coin222.png" /><a class="cks" href="/?r=admin/scene/index"
+						target="main">景点展示</a><img class="icon5" src="<?php echo IMG_URL;?>/coin21.png" />
 				</dd>
 			</dl>
+
+
 			<dl class="system_log">
 				<dt>
 					<img class="icon1" src="<?php echo IMG_URL;?>/coin05.png" /><img class="icon2"
-						src="<?php echo IMG_URL;?>/coin06.png" /> 导肮栏管理<img class="icon3"
+						src="<?php echo IMG_URL;?>/coin06.png" /> 公告管理<img class="icon3"
 						src="<?php echo IMG_URL;?>/coin19.png" /><img class="icon4"
 						src="<?php echo IMG_URL;?>/coin20.png" />
 				</dt>
 				<dd>
 					<img class="coin11" src="<?php echo IMG_URL;?>/coin111.png" /><img class="coin22"
-						src="<?php echo IMG_URL;?>/coin222.png" /><a class="cks" href="../banner.html"
-						target="main">导航栏添加</a><img class="icon5" src="<?php echo IMG_URL;?>/coin21.png" />
+						src="<?php echo IMG_URL;?>/coin222.png" /><a class="cks" href="/?r=admin/notice/create"
+						target="main">公告添加</a><img class="icon5" src="<?php echo IMG_URL;?>/coin21.png" />
 				</dd>
 				<dd>
 					<img class="coin11" src="<?php echo IMG_URL;?>/coin111.png" /><img class="coin22"
-						src="<?php echo IMG_URL;?>/coin222.png" /><a class="cks" href="../opinion.html"
-						target="main">导航栏展示</a><img class="icon5" src="<?php echo IMG_URL;?>/coin21.png" />
+						src="<?php echo IMG_URL;?>/coin222.png" /><a class="cks" href="/?r=admin/notice/index"
+						target="main">公告展示</a><img class="icon5" src="<?php echo IMG_URL;?>/coin21.png" />
 				</dd>
 			</dl>
+
 			<dl class="system_log">
 				<dt>
 					<img class="icon1" src="<?php echo IMG_URL;?>/coin07.png" /><img class="icon2"
@@ -66,6 +74,13 @@ $this->context->layout = false; //不使用布局
 						src="<?php echo IMG_URL;?>/coin222.png" /><a href="../vip.html" target="main"
 						class="cks">会员管理</a><img class="icon5" src="<?php echo IMG_URL;?>/coin21.png" />
 				</dd>
+	
+			<dd>
+					<img class="coin11" src="<?php echo IMG_URL;?>/coin111.png" /><img class="coin22"
+						src="<?php echo IMG_URL;?>/coin222.png" /><a href="../vip.html" target="main"
+						class="cks">会员管理</a><img class="icon5" src="<?php echo IMG_URL;?>/coin21.png" />
+				</dd>
+
 			</dl>
 			<dl class="system_log">
 				<dt>
@@ -87,46 +102,6 @@ $this->context->layout = false; //不使用布局
 						src="<?php echo IMG_URL;?>/coin21.png" />
 				</dd>
 
-			</dl>
-			<dl class="system_log">
-				<dt>
-					<img class="icon1" src="<?php echo IMG_URL;?>/coin11.png" /><img class="icon2"
-						src="<?php echo IMG_URL;?>/coin12.png" /> 话题管理<img class="icon3"
-						src="<?php echo IMG_URL;?>/coin19.png" /><img class="icon4"
-						src="<?php echo IMG_URL;?>/coin20.png" />
-				</dt>
-				<dd>
-					<img class="coin11" src="<?php echo IMG_URL;?>/coin111.png" /><img class="coin22"
-						src="<?php echo IMG_URL;?>/coin222.png" /><a href="../topic.html" target="main"
-						class="cks">话题管理</a><img class="icon5" src="<?php echo IMG_URL;?>/coin21.png" />
-				</dd>
-			</dl>
-			<dl class="system_log">
-				<dt>
-					<img class="icon1" src="<?php echo IMG_URL;?>/coin14.png" /><img class="icon2"
-						src="<?php echo IMG_URL;?>/coin13.png" /> 心愿管理<img class="icon3"
-						src="<?php echo IMG_URL;?>/coin19.png" /><img class="icon4"
-						src="<?php echo IMG_URL;?>/coin20.png" />
-				</dt>
-				<dd>
-					<img class="coin11" src="<?php echo IMG_URL;?>/coin111.png" /><img class="coin22"
-						src="<?php echo IMG_URL;?>/coin222.png" /><a href="../wish.html" target="main"
-						class="cks">心愿管理</a><img class="icon5" src="<?php echo IMG_URL;?>/coin21.png" />
-				</dd>
-			</dl>
-			<dl class="system_log">
-				<dt>
-					<img class="icon1" src="<?php echo IMG_URL;?>/coin15.png" /><img class="icon2"
-						src="<?php echo IMG_URL;?>/coin16.png" /> 约见管理<img class="icon3"
-						src="<?php echo IMG_URL;?>/coin19.png" /><img class="icon4"
-						src="<?php echo IMG_URL;?>/coin20.png" />
-				</dt>
-				<dd>
-					<img class="coin11" src="<?php echo IMG_URL;?>/coin111.png" /><img class="coin22"
-						src="<?php echo IMG_URL;?>/coin222.png" /><a href="../appointment.html"
-						target="main" class="cks">约见管理</a><img class="icon5"
-						src="<?php echo IMG_URL;?>/coin21.png" />
-				</dd>
 			</dl>
 			<dl class="system_log">
 				<dt>
